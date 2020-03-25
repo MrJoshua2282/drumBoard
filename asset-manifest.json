@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/drumBoard/static/css/main.34f05c81.chunk.css",
+    "main.js": "/drumBoard/static/js/main.45ee9c5e.chunk.js",
+    "main.js.map": "/drumBoard/static/js/main.45ee9c5e.chunk.js.map",
+    "runtime-main.js": "/drumBoard/static/js/runtime-main.89389e00.js",
+    "runtime-main.js.map": "/drumBoard/static/js/runtime-main.89389e00.js.map",
+    "static/js/2.6ee66d48.chunk.js": "/drumBoard/static/js/2.6ee66d48.chunk.js",
+    "static/js/2.6ee66d48.chunk.js.map": "/drumBoard/static/js/2.6ee66d48.chunk.js.map",
+    "index.html": "/drumBoard/index.html",
+    "precache-manifest.130082d2ca5799caf256719b2c2e8d10.js": "/drumBoard/precache-manifest.130082d2ca5799caf256719b2c2e8d10.js",
+    "service-worker.js": "/drumBoard/service-worker.js",
+    "static/css/main.34f05c81.chunk.css.map": "/drumBoard/static/css/main.34f05c81.chunk.css.map",
+    "static/js/2.6ee66d48.chunk.js.LICENSE.txt": "/drumBoard/static/js/2.6ee66d48.chunk.js.LICENSE.txt",
+    "static/media/bell-1.mp3": "/drumBoard/static/media/bell-1.7658f906.mp3",
+    "static/media/bell-2.mp3": "/drumBoard/static/media/bell-2.27592ab5.mp3",
+    "static/media/bell-3.mp3": "/drumBoard/static/media/bell-3.05cb6423.mp3",
+    "static/media/piano-1.mp3": "/drumBoard/static/media/piano-1.faafa8b5.mp3",
+    "static/media/piano-2.mp3": "/drumBoard/static/media/piano-2.c2f1538a.mp3",
+    "static/media/piano-3.mp3": "/drumBoard/static/media/piano-3.11b3ac56.mp3",
+    "static/media/piano-4.mp3": "/drumBoard/static/media/piano-4.241c9c88.mp3",
+    "static/media/piano-5.mp3": "/drumBoard/static/media/piano-5.8f0e21a2.mp3",
+    "static/media/Frame.css": "/drumBoard/static/media/river.4a6a12bb.jpg",
+    "static/media/soundA.wav": "/drumBoard/static/media/soundA.4679bba5.wav",
+    "static/media/soundB.wav": "/drumBoard/static/media/soundB.04c3225c.wav",
+    "static/media/soundC.wav": "/drumBoard/static/media/soundC.9632ac56.wav",
+    "static/media/soundD.wav": "/drumBoard/static/media/soundD.9db9cfca.wav",
+    "static/media/soundE.wav": "/drumBoard/static/media/soundE.d24b097c.wav",
+    "static/media/soundF.flac": "/drumBoard/static/media/soundF.e6239126.flac",
+    "static/media/soundG.wav": "/drumBoard/static/media/soundG.fdc8edaa.wav",
+    "static/media/soundH.wav": "/drumBoard/static/media/soundH.0deb6a9e.wav",
+    "static/media/soundI.wav": "/drumBoard/static/media/soundI.e4b0cdec.wav",
+    "static/media/three.mp3": "/drumBoard/static/media/three.9e85ad58.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89389e00.js",
+    "static/js/2.6ee66d48.chunk.js",
+    "static/css/main.34f05c81.chunk.css",
+    "static/js/main.45ee9c5e.chunk.js"
+  ]
+}
