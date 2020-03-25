@@ -1,0 +1,62 @@
+.background {
+    background-image: url('../assets/image/river.jpg');
+    /* width: 100%; */
+    background-position: cover;
+    background-size: cover;
+    height: 100vh;
+}
+label {
+   padding: 2rem;
+}
+
+input {
+}
+
+#stage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180, 187, 180);
+    
+    /* overflow: hidden; */
+
+    display: grid;
+    grid-template-rows: repeat(3, 6rem);
+    grid-template-columns: repeat(3, 6rem);
+}
+
+.btn {
+    box-shadow: 0 0 .3rem green;
+    text-decoration: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: rgb(12, 189, 233, .5);
+    box-shadow: 0 .3rem 1rem rgb(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.options {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 6rem;
+    height: 5rem;
+    transform: translate(-50%, -50%);
+    background-color: rgb(181, 247, 233);
+    border-radius: .5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
