@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Frame.css';
 
 import sound1 from '../assets/audio/piano-1.mp3';
@@ -20,27 +20,27 @@ import soundG from '../assets/audio/soundG.wav';
 import soundH from '../assets/audio/soundH.wav';
 import soundI from '../assets/audio/soundI.wav';
 
-import {Howl, Howler} from 'howler';
+import { Howl, Howler } from 'howler';
 
 const audioClip = [
-    {sound: sound1, label: 'Q'},
-    {sound: sound2, label: 'W'},
-    {sound: sound3, label: 'E'},
-    {sound: sound4, label: 'A'},
-    {sound: sound5, label: 'S'},
-    {sound: sound6, label: 'D'},
-    {sound: sound7, label: 'Z'},
-    {sound: sound8, label: 'X'},
-    {sound: sound9, label: 'C'},
-    {sound: soundA, label: 'Q'},
-    {sound: soundB, label: 'W'},
-    {sound: soundC, label: 'E'},
-    {sound: soundD, label: 'A'},
-    {sound: soundE, label: 'S'},
-    {sound: soundF, label: 'D'},
-    {sound: soundG, label: 'Z'},
-    {sound: soundH, label: 'X'},
-    {sound: soundI, label: 'C'}
+    { sound: sound1, label: 'Q' },
+    { sound: sound2, label: 'W' },
+    { sound: sound3, label: 'E' },
+    { sound: sound4, label: 'A' },
+    { sound: sound5, label: 'S' },
+    { sound: sound6, label: 'D' },
+    { sound: sound7, label: 'Z' },
+    { sound: sound8, label: 'X' },
+    { sound: sound9, label: 'C' },
+    { sound: soundA, label: 'Q' },
+    { sound: soundB, label: 'W' },
+    { sound: soundC, label: 'E' },
+    { sound: soundD, label: 'A' },
+    { sound: soundE, label: 'S' },
+    { sound: soundF, label: 'D' },
+    { sound: soundG, label: 'Z' },
+    { sound: soundH, label: 'X' },
+    { sound: soundI, label: 'C' }
 ]
 class Frame extends Component {
     state = {
@@ -48,82 +48,82 @@ class Frame extends Component {
         firstBoard: true
     }
 
-  soundPlay = (src) => {
-      const sound = new Howl({
-          src
-      })
-      sound.play();
-  }
+    soundPlay = (src) => {
+        const sound = new Howl({
+            src
+        })
+        sound.play();
+    }
 
-  keyPressHandler = (event) => {
-    if (event.key === 'j'){this.toggleBoard()}
-    if (this.state.firstBoard) {
-        switch(event.key) {
-              case 'q':
-                  this.soundPlay(audioClip[0].sound);
-                  break;
-              case  'w':
-                  this.soundPlay(audioClip[1].sound);
-                  break;
-              case 'e':
-                  this.soundPlay(audioClip[2].sound);
-                  break;
-              case  'a':
-                  this.soundPlay(audioClip[3].sound);
-                  break;
-              case 's':
-                  this.soundPlay(audioClip[4].sound);
-                  break;
-              case  'd':
-                  this.soundPlay(audioClip[5].sound);
-                  break;
-              case 'z':
-                  this.soundPlay(audioClip[6].sound);
-                  break;
-              case  'x':
-                  this.soundPlay(audioClip[7].sound);
-                  break;
-              case  'c':
-                  this.soundPlay(audioClip[8].sound);
-                  break;
-              default:
-                  return;
+    keyPressHandler = (event) => {
+        if (event.key === 'j') { this.toggleBoard() }
+        if (this.state.firstBoard) {
+            switch (event.key) {
+                case 'q':
+                    this.soundPlay(audioClip[0].sound);
+                    break;
+                case 'w':
+                    this.soundPlay(audioClip[1].sound);
+                    break;
+                case 'e':
+                    this.soundPlay(audioClip[2].sound);
+                    break;
+                case 'a':
+                    this.soundPlay(audioClip[3].sound);
+                    break;
+                case 's':
+                    this.soundPlay(audioClip[4].sound);
+                    break;
+                case 'd':
+                    this.soundPlay(audioClip[5].sound);
+                    break;
+                case 'z':
+                    this.soundPlay(audioClip[6].sound);
+                    break;
+                case 'x':
+                    this.soundPlay(audioClip[7].sound);
+                    break;
+                case 'c':
+                    this.soundPlay(audioClip[8].sound);
+                    break;
+                default:
+                    return;
             }
-            
-      } else if (!this.state.firstBoard){
-        switch(event.key) {
-            case 'q':
-                this.soundPlay(audioClip[9].sound);
-                break;
-            case  'w':
-                this.soundPlay(audioClip[10].sound);
-                break;
-            case 'e':
-                this.soundPlay(audioClip[11].sound);
-                break;
-            case  'a':
-                this.soundPlay(audioClip[12].sound);
-                break;
-            case 's':
-                this.soundPlay(audioClip[13].sound);
-                break;
-            case  'd':
-                this.soundPlay(audioClip[14].sound);
-                break;
-            case 'z':
-                this.soundPlay(audioClip[15].sound);
-                break;
-            case  'x':
-                this.soundPlay(audioClip[16].sound);
-                break;
-            case  'c':
-                this.soundPlay(audioClip[17].sound);
-                break;
-            default:
-               return;
-          }
-      }
-  }
+
+        } else if (!this.state.firstBoard) {
+            switch (event.key) {
+                case 'q':
+                    this.soundPlay(audioClip[9].sound);
+                    break;
+                case 'w':
+                    this.soundPlay(audioClip[10].sound);
+                    break;
+                case 'e':
+                    this.soundPlay(audioClip[11].sound);
+                    break;
+                case 'a':
+                    this.soundPlay(audioClip[12].sound);
+                    break;
+                case 's':
+                    this.soundPlay(audioClip[13].sound);
+                    break;
+                case 'd':
+                    this.soundPlay(audioClip[14].sound);
+                    break;
+                case 'z':
+                    this.soundPlay(audioClip[15].sound);
+                    break;
+                case 'x':
+                    this.soundPlay(audioClip[16].sound);
+                    break;
+                case 'c':
+                    this.soundPlay(audioClip[17].sound);
+                    break;
+                default:
+                    return;
+            }
+        }
+    }
 
     Btns1 = () => {
         return audioClip.map((cur, i) => {
@@ -144,57 +144,26 @@ class Frame extends Component {
     }
 
     componentDidMount() {
-        this.setState({setOfSounds: this.Btns1()});
+        this.setState({ setOfSounds: this.Btns1() });
         document.body.addEventListener('keydown', this.keyPressHandler);
     }
 
     toggleBoard = () => {
         if (this.state.firstBoard) {
-            this.setState({firstBoard: false, setOfSounds: this.Btns2()});
+            this.setState({ firstBoard: false, setOfSounds: this.Btns2() });
         } else {
-            this.setState({firstBoard: true, setOfSounds: this.Btns1()});
+            this.setState({ firstBoard: true, setOfSounds: this.Btns1() });
         }
     }
-
-    // changeBtnHandler = (event) => {
-        // let update, firstBoard;
-
-        // switch(event.target.value) {
-        //     case 'BoardA':
-        //         update = this.Btns1();
-        //         firstBoard = true;
-        //         break;
-        //     case 'BoardB':
-        //         update = this.Btns2();
-        //         firstBoard = false;
-        //         break;
-        //     default:
-        //         update = this.Btns1();
-        //         firstBoard = true;
-        // }
-
-        // this.setState({setOfSounds: update, firstBoard: firstBoard});
-    // }
 
     render() {
         Howler.volume(1.0)
         return (
             <div className='background'>
                 <div id="stage">
-                    {/* <button  class='btn' id='sound0' onClick={() => this.soundPlay(audioClip[0].sound)} > {audioClip[0].label} </button>
-                    */}
                     {this.state.setOfSounds}
                 </div>
-
                 <div className='options'><span>{this.state.firstBoard ? 'Board 1' : 'Board 2'}</span> <br></br> <span>press 'J'</span></div>
-
-                {/* <div className='options' onChange={(event)=> this.changeBtnHandler(event)}>
-                    <input id='one' type='radio' value='BoardA' name='sound' defaultChecked />
-                    <label htmlFor='one'>Board A</label>
-                    <br></br>
-                    <input id='two' type='radio' value='BoardB' name='sound' />
-                    <label htmlFor='two'>Board B</label>
-                </div> */}
             </div>
         );
     };
